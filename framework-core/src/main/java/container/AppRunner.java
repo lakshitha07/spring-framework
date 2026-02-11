@@ -40,8 +40,10 @@ public class AppRunner {
 
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(InfraConfig.class);
         // accessing the business bean from the IOC container
+        InfraSource infraSource = applicationContext.getBean(InfraSource.class);
+        infraSource.load();
         PaymentService paymentService = applicationContext.getBean(PaymentService.class);
         paymentService.transfer();
     }
