@@ -33,6 +33,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  *  └── WebApplicationContext
  *         └── ConfigurableWebApplicationContext
  *                └── AnnotationConfigServletWebServerApplicationContext
+ * -----------------------------------------------
+ * ApplicationContext can be created in any environment including standalone app, web app or unit test
  */
 public class AppRunner {
 
