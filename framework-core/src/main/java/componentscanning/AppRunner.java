@@ -1,6 +1,5 @@
 package componentscanning;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppRunner {
@@ -25,3 +24,4 @@ public class AppRunner {
         applicationContext.registerShutdownHook();
     }
 }
+

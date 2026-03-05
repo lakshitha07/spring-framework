@@ -9,7 +9,7 @@ public class AppRunner {
 
         // activating the profile via system/jvm property
         // different ways of activating (1) command line [-Dspring.profiles.active=dev,prod] (2) programmatically [this]
-        System.setProperty("spring.profiles.active", "dev");
+        System.setProperty("spring.profiles.active", "prod");
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
