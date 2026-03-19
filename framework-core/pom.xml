@@ -29,6 +29,13 @@
             <version>7.0.3</version>
             <scope>compile</scope>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>6.2.15</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Source: https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
         <!-- This had to added to activate earlier javax related annotations such as postConstruct etc. which was
         removed from jdk 11 and up -->
@@ -73,6 +80,14 @@
             <artifactId>mockito-junit-jupiter</artifactId>
             <version>5.21.0</version>
             <scope>test</scope>
+        </dependency>
+        <!--JDBC driver for the H2 db -->
+        <!-- Source: https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.4.240</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
